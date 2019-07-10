@@ -6,7 +6,7 @@ import ListItem from '../ListItem/ListItem';
 const placeList = props => {
     return (
         <FlatList style={styles.listContainer} data={props.places} renderItem={(info) => (
-            <ListItem TFValue={info.item.value} onItemPressed={() => props.onItemDeleted(info.item.key)} />
+            <ListItem TFValue={info.item.value} onItemPressed={() => props.onItemSelected(info.item.key)} />
         )} />
     )
 }
